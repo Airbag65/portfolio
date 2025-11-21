@@ -32,6 +32,19 @@ func main() {
 		return c.Render(http.StatusOK, "index.html", nil)
 	})
 
+	e.POST("/testing", func(c echo.Context) error {
+		return c.Render(http.StatusOK, "test.html", nil)
+	})
+
+
+	e.POST("/about", func(c echo.Context) error {
+		return c.Render(http.StatusOK, "about.html", nil)
+	})
+
+	e.POST("/", func(c echo.Context) error {
+		return c.Render(http.StatusOK, "start.html", nil)
+	})
+
 	e.Logger.Fatal(e.Start(":8080"))
 }
 
