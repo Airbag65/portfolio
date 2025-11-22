@@ -1,0 +1,5 @@
+<div class="card" hx-post="/project/{{ .Id }}" hx-target="#main">
+    <h4>{{ .Title }}</h4>
+    <p>{{ .Description }}</p>
+    <a href="{{ .Link }}" target="_blank">{{ .Link }}</a>
+</div>

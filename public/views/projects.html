@@ -1,0 +1,8 @@
+<div>
+    <h1>PROJECTS</h1>
+    <div class="project-list">
+        {{ range .Items }}
+        {{ template "project_card.html" . }}
+        {{ end }}
+    </div>
+</div>
